@@ -6,9 +6,14 @@ import { AppProvider } from './HouseholdAccountBook/2. Article/AppContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppProvider>
+   <div style={{
+    width : '80%',
+    margin : '30px auto'
+   }}>
+     <AppProvider>
       <Header />
       <Article />
-    </AppProvider>
-  </StrictMode>,
+     </AppProvider>
+   </div>
+  </StrictMode>
 )
